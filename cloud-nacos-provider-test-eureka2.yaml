@@ -1,0 +1,9 @@
+spring:
+  profiles: eureka2
+server:
+  port: 9096
+  test: service2 hello
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9094/eureka/
