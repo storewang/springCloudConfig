@@ -1,2 +1,2 @@
 # springCloudConfig
-配置文件存放
+spring-cloud-test 配置文件存放
