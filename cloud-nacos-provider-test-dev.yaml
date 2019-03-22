@@ -6,7 +6,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9093/eureka/
+      defaultZone: http://eureka1:9093/eureka/
 ---
 spring:
   profiles: eureka2
@@ -16,4 +16,4 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9094/eureka/
+      defaultZone: http://eureka2:9094/eureka/
