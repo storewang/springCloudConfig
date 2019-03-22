@@ -1,0 +1,28 @@
+spring:
+  profiles: eureka1
+  application:
+    name: cloud-nacos-eureka-server
+server:
+  port: 9093
+eureka:
+  datacenter: shanghai
+  instance:
+    hostname: eureka1
+  client:
+    service-url:
+         defaultZone: http://eureka2:9094/eureka/
+
+---
+spring:
+  profiles: eureka2
+  application:
+    name: cloud-nacos-eureka-server
+server:
+  port: 9094
+eureka:
+  datacenter: shanghai
+  instance:
+    hostname: eureka2
+  client:
+    service-url:
+         defaultZone: http://eureka1:9093/eureka/         
